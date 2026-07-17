@@ -5,7 +5,7 @@ import (
 	"errors"
 	"os"
 	// 從config讀取檔案路徑
-	"Day1_1/config"
+	"Day1_2/config"
 )
 
 type FileInfo struct {

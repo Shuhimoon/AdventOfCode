@@ -18,9 +18,13 @@ type Result struct {
 	Listdata []string
 }
 
+
+var res Result = Result{
+	Filepaths: config.GetConfig().FilePath,
+}
+
+
 func main() {
-	res := Result{}
-	res.Filepaths = config.GetConfig().FilePath
 	res.Data, _ = read.ReadInput(res.Filepaths)
 	// Split the data into lines
 	res.Listdata = strings.Split(res.Data, "\n")
